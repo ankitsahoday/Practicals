@@ -1,0 +1,33 @@
+.main
+{
+
+     justify-content: tent: center;
+
+	background-color: rgba(255,199,255,0.9);	;
+	padding:40px;
+	width: 50%;
+	margin-left:30%;
+
+}
+
+.reg{
+ justify-content: center;
+ margin: auto;
+ padding:auto;
+}
+
+.butt
+{
+	text-align: center;   
+	width: 100px;
+}
+
+.lab
+{
+
+
+    justify-content: center;
+ margin: auto;/*
+ padding:auto;*/
+	font-weight: bolder;
+}
