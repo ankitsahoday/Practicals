@@ -1,0 +1,57 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>Student Registration Form</title>
+		</head>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="/home/ankit/Documents/ITPrac/q1.css">
+
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">	
+
+		
+	<body>
+
+		<h1 style="text-align: center; font-size: 50px; max-height: 70px; background-color: red;">Student Registraion</h1>
+
+		<div class="main">
+		<form class="reg" name="f1" method="post" onsubmit="return validate();">
+		<label class="lab">Name</label><br>
+		<input type="text" name="name" required="" id="name"><br>
+		<label class="lab">RollNo</label><br>
+		<input type="text" name="rollno" required="" id="rollno"><br>
+
+		<label class="lab">DateOfBirth</label><br>
+		<input type="date" name="dob" required=""><br>
+		<br>
+
+		<button type="Sumbit"> Sumbit</button>
+    	</form>
+		</div>
+
+
+		<p id="final">fd
+		</p>
+
+		<script type="text/javascript">
+			
+	function validate() {
+
+		 const rollNumberRegex = /^[\d]{7}$/g;
+     const nameRegex = /^[a-zA-Z\ ]+$/g;
+
+		 var name=document.getElementById("name");
+		 var roll=document.getElementById("roll");
+		
+          if(rollNumberRegex.test(roll.value)===false)
+          {
+          	alert("WROGNG");
+          	document.getElementById(final).innerHTML="Invalid RollNO";
+
+          } 
+
+	</script>
+
+
+		</body>
+		</html>
