@@ -3,8 +3,8 @@ function validate() {
 
 	var name=document.forms["reg"]["name"].value;
 	var roll=document.forms["reg"]["rollno"].value;
-	var npat=/^[a-z][A-Z]$/;
-	var rpat=/^\d{7}$/;
+	cost npat=/^[a-z][A-Z]$/;
+	const rpat=/^\d{7}$/;
 
 
 	if(npat.test(name)==false)
